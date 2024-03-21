@@ -1,6 +1,6 @@
 ﻿namespace CheckersClasslib;
 
-public abstract class Board
+public enum Teams
 {
-
+    White, Black
 }
