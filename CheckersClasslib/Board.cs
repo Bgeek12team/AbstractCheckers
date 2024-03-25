@@ -38,7 +38,9 @@ public class Board
     }
     void ChangeCoords(Move move)
     {
-        return;
+        Figure clone = figures[move.Xto, move.Yto];
+        figures[move.Xto, move.Yto] = figures[move.Xfrom, move.Yfrom];
+        figures[move.Xfrom, move.Yfrom] = clone;
     }
     
 
@@ -63,7 +65,10 @@ public class Board
 
     void DeleteFigures(Move move)
     {
-        return;
+        int eatenX = (move.Xfrom + move.Xto) / 2;
+        int eatenY = (move.Yfrom + move.Yto) / 2;
+
+        figures[eatenX, eatenY] = null;
     }
     void SkipMove(Move move)
     {
