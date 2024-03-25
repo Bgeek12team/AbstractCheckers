@@ -1,5 +1,10 @@
 ﻿namespace CheckersClasslib;
 
+public enum MoveResult
+{
+    Eat, Movement, Denied
+}
+
 public class Board
 {
     Cell[,] board;
@@ -11,36 +16,56 @@ public class Board
 
     public Board(Cell[,] cells, Figure[,] figures, int size)
     {
-        board = new Cell[size, size];
-        figures = new Figure[size, size];
+        board = cells;
+        this.figures = figures;
     }
 
     public void MakeMove(Move move)
     {
-        if (!figures[move.Xfrom, move.Yfrom].IsValidMove(move))
+        MoveResult moveResult;
+        board[move.Xto, move.Yto].HandleOutMovement(move, this);
+        moveResult = HandleMove(move);
+        if (moveResult == MoveResult.Denied)
         {
+            ChangeTeam();
             return;
         }
-        board[move.Xto, move.Yto].HandleOutMovement(move, this);
-        if (!HandleMovement(move)) // ход на просто перемещение
-        { 
-            HandleEating(move);
+        if (moveResult == MoveResult.Movement)
+        {
+            HandleMovement(move);
             return;
-        } 
-        ChangeTeam();
+        }
+        HandleEating(move);
     }
 
-    bool HandleMovement(Move move)
+
+    MoveResult HandleMove(Move move)
+    {
+        if (figures[move.Xfrom, move.Yfrom].IsValidMovement(move))
+        {
+            return figures[move.Xto, move.Yto] == null ? MoveResult.Movement : MoveResult.Denied;
+        }
+        if (figures[move.Xfrom, move.Yfrom].IsValidEating(move))
+        {
+            return FigureCount(move) == 1 ? MoveResult.Eat : MoveResult.Denied;
+        }
+        return MoveResult.Denied;
+    }
+
+    int FigureCount(Move move) =>
+        figures[(move.Xfrom + move.Xto) / 2, (move.Yfrom + move.Yto) / 2] != null ?
+        1 : 0;
+
+    void HandleMovement(Move move)
     {
         ChangeCoords(move);
         board[move.Xto, move.Yto].HandleInMovement(move, this);
-        return default;
+        ChangeTeam();
     }
     void ChangeCoords(Move move)
     {
         return;
     }
-    
 
     void HandleEating(Move move)
     {
@@ -50,26 +75,14 @@ public class Board
             return;
         }
         DeleteFigures(move);
-        SkipMove(move);
-        var newPos = CreateSkippedMove(move);
-        board[newPos.Xto, newPos.Yto].HandleInMovement(newPos, this);
+        board[move.Xto, move.Yto].HandleInMovement(move, this);
         return;
-    }
-
-    Move CreateSkippedMove(Move move)
-    {
-        return default;
     }
 
     void DeleteFigures(Move move)
     {
         return;
     }
-    void SkipMove(Move move)
-    {
-        return;
-    }
-
 
     void ChangeTeam()
     { 

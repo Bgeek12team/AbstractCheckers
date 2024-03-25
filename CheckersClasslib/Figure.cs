@@ -6,7 +6,8 @@ public abstract class Figure(Teams team)
     public int X { get; set; }
     public int Y { get; set; }
 
-    public abstract bool IsValidMove(Move move);
+    public abstract bool IsValidMovement(Move move);
+    public abstract bool IsValidEating(Move move);
 
     public abstract bool CanEat(Move move, Board board);
 }
