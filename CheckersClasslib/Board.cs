@@ -2,14 +2,18 @@
 
 public class Board
 {
-    const int SIZE = 10;
-    Cell[,] board = new Cell[SIZE, SIZE];
-    Figure[,] figures = new Figure[SIZE, SIZE];
+    Cell[,] board;
+    Figure[,] figures;
 
     public event EventHandler<BoardEventArgs> ChangedTeam;
 
     public Teams LeadingTeam { get; set; }
 
+    public Board(Cell[,] cells, Figure[,] figures, int size)
+    {
+        board = new Cell[size, size];
+        figures = new Figure[size, size];
+    }
 
     public void MakeMove(Move move)
     {
