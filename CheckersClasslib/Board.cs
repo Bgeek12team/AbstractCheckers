@@ -1,18 +1,18 @@
 ﻿namespace CheckersClasslib;
 
-public enum MoveResult
-{
-    Eat, Movement, Denied
-}
-
 public class Board
 {
-    Cell[,] board;
-    Figure[,] figures;
+    public enum MoveResult
+    {
+        Eat, Movement, Denied
+    }
+
+    internal Cell[,] board;
+    internal Figure[,] figures;
 
     public event EventHandler<BoardEventArgs> ChangedTeam;
 
-    public Teams LeadingTeam { get; set; }
+    public Team LeadingTeam { get; set; }
 
     public Board(Cell[,] cells, Figure[,] figures, int size)
     {
@@ -22,14 +22,17 @@ public class Board
 
     public void MakeMove(Move move)
     {
+        if (board[move.Xfrom, move.Yfrom].Team != LeadingTeam)
+            return;
+
         MoveResult moveResult;
-        board[move.Xto, move.Yto].HandleOutMovement(move, this);
         moveResult = HandleMove(move);
         if (moveResult == MoveResult.Denied)
         {
             ChangeTeam();
             return;
         }
+        board[move.Xto, move.Yto].HandleOutMovement(move, this);
         if (moveResult == MoveResult.Movement)
         {
             HandleMovement(move);
@@ -41,13 +44,13 @@ public class Board
 
     MoveResult HandleMove(Move move)
     {
-        if (figures[move.Xfrom, move.Yfrom].IsValidMovement(move))
-        {
-            return figures[move.Xto, move.Yto] == null ? MoveResult.Movement : MoveResult.Denied;
-        }
         if (figures[move.Xfrom, move.Yfrom].IsValidEating(move))
         {
-            return FigureCount(move) == 1 ? MoveResult.Eat : MoveResult.Denied;
+            return figures[move.Xto, move.Yto].CanEat(move, this) ? MoveResult.Eat : MoveResult.Denied;
+        }
+        if (figures[move.Xfrom, move.Yfrom].IsValidMovement(move))
+        {
+            return figures[move.Xto, move.Yto].CanMove(move, this) ? MoveResult.Movement : MoveResult.Denied;
         }
         return MoveResult.Denied;
     }
@@ -91,7 +94,7 @@ public class Board
 
     void ChangeTeam()
     { 
-        LeadingTeam = (Teams)(1 - (int)LeadingTeam);
+        LeadingTeam = (Team)(1 - (int)LeadingTeam);
         ChangedTeam?.Invoke(this, new BoardEventArgs());
     }
 

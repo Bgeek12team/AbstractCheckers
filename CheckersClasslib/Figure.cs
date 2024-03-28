@@ -1,8 +1,8 @@
 ﻿namespace CheckersClasslib;
 
-public abstract class Figure(Teams team)
+public abstract class Figure(Team team)
 {
-    public Teams Team { get; set; } = team;
+    public Team Team { get; set; } = team;
     public int X { get; set; }
     public int Y { get; set; }
 
@@ -10,4 +10,5 @@ public abstract class Figure(Teams team)
     public abstract bool IsValidEating(Move move);
 
     public abstract bool CanEat(Move move, Board board);
+    public abstract bool CanMove(Move move, Board board);
 }

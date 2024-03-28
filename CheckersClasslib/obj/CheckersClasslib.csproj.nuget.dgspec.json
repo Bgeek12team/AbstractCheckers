@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mark2\\Documents\\GitHub\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {}
+    "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mark2\\Documents\\GitHub\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {
+    "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mark2\\Documents\\GitHub\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj",
+        "projectUniqueName": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj",
         "projectName": "CheckersClasslib",
-        "projectPath": "C:\\Users\\mark2\\Documents\\GitHub\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj",
-        "packagesPath": "C:\\Users\\mark2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mark2\\Documents\\GitHub\\AbstractCheckers\\CheckersClasslib\\obj\\",
+        "projectPath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj",
+        "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mark2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
