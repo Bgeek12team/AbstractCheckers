@@ -11,7 +11,7 @@
         "projectName": "CheckersClasslib",
         "projectPath": "C:\\Users\\Анна\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj",
         "packagesPath": "C:\\Users\\Анна\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Анна\\Source\\Repos\\AbstractCheckers\\CheckersClasslib\\obj\\",
+        "outputPath": "C:\\Users\\Анна\\source\\repos\\AbstractCheckers\\CheckersClasslib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Анна\\AppData\\Roaming\\NuGet\\NuGet.Config",

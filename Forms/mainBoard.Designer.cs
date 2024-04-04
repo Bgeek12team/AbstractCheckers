@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            groupBox1 = new GroupBox();
+            gB_board = new GroupBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
-            button1 = new Button();
+            b_stopGame = new Button();
             SuspendLayout();
             // 
-            // groupBox1
+            // gB_board
             // 
-            groupBox1.Location = new Point(12, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(688, 600);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Поле";
+            gB_board.Location = new Point(12, 12);
+            gB_board.Name = "gB_board";
+            gB_board.Size = new Size(688, 600);
+            gB_board.TabIndex = 0;
+            gB_board.TabStop = false;
+            gB_board.Text = "Поле";
             // 
             // label1
             // 
@@ -62,6 +62,7 @@
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
+            groupBox2.Enter += groupBox2_Enter;
             // 
             // groupBox3
             // 
@@ -72,38 +73,40 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "groupBox3";
             // 
-            // button1
+            // b_stopGame
             // 
-            button1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button1.Location = new Point(706, 544);
-            button1.Name = "button1";
-            button1.Size = new Size(279, 68);
-            button1.TabIndex = 4;
-            button1.Text = "Завершить";
-            button1.UseVisualStyleBackColor = true;
+            b_stopGame.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            b_stopGame.Location = new Point(706, 544);
+            b_stopGame.Name = "b_stopGame";
+            b_stopGame.Size = new Size(279, 68);
+            b_stopGame.TabIndex = 4;
+            b_stopGame.Text = "Завершить";
+            b_stopGame.UseVisualStyleBackColor = true;
+            b_stopGame.Click += b_stopGame_Click;
             // 
             // mainBoard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(997, 624);
-            Controls.Add(button1);
+            Controls.Add(b_stopGame);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(label1);
-            Controls.Add(groupBox1);
+            Controls.Add(gB_board);
             Name = "mainBoard";
             Text = "mainBoard";
+            Load += mainBoard_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private GroupBox groupBox1;
+        private GroupBox gB_board;
         private Label label1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
-        private Button button1;
+        private Button b_stopGame;
     }
 }

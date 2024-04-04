@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
-            button1 = new Button();
+            b_startStandartGame = new Button();
             button2 = new Button();
             button3 = new Button();
             SuspendLayout();
             // 
-            // button1
+            // b_startStandartGame
             // 
-            button1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            button1.Location = new Point(80, 65);
-            button1.Name = "button1";
-            button1.Size = new Size(341, 74);
-            button1.TabIndex = 0;
-            button1.Text = "Стандартная игра";
-            button1.UseVisualStyleBackColor = true;
+            b_startStandartGame.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
+            b_startStandartGame.Location = new Point(80, 65);
+            b_startStandartGame.Name = "b_startStandartGame";
+            b_startStandartGame.Size = new Size(341, 74);
+            b_startStandartGame.TabIndex = 0;
+            b_startStandartGame.Text = "Стандартная игра";
+            b_startStandartGame.UseVisualStyleBackColor = true;
+            b_startStandartGame.Click += b_startStandartGame_Click;
             // 
             // button2
             // 
@@ -73,7 +74,7 @@
             ClientSize = new Size(450, 450);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(b_startStandartGame);
             Name = "menu";
             Text = "menu";
             ResumeLayout(false);
@@ -81,7 +82,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button b_startStandartGame;
         private Button button2;
         private Button button3;
     }
