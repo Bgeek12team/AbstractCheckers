@@ -14,7 +14,8 @@ public class Board
 
     public Team LeadingTeam { get; set; }
 
-    public Board(Cell[,] cells, Figure[,] figures, int size)
+
+    public Board(Cell[,] cells, Figure[,] figures)
     {
         board = cells;
         this.figures = figures;
@@ -22,7 +23,7 @@ public class Board
 
     public void MakeMove(Move move)
     {
-        if (board[move.Xfrom, move.Yfrom].Team != LeadingTeam)
+        if (figures[move.Xfrom, move.Yfrom].Team != LeadingTeam)
             return;
 
         MoveResult moveResult;
@@ -33,6 +34,12 @@ public class Board
             return;
         }
         board[move.Xto, move.Yto].HandleOutMovement(move, this);
+
+        if (board[move.Xfrom, move.Xto] == null)
+        {
+            ChangeTeam();
+            return;
+        }
         if (moveResult == MoveResult.Movement)
         {
             HandleMovement(move);
@@ -83,6 +90,8 @@ public class Board
         board[move.Xto, move.Yto].HandleInMovement(move, this);
         return;
     }
+
+    // ПЕРЕПИСАТТЬ Сукаа!!
 
     void DeleteFigures(Move move)
     {

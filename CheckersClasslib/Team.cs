@@ -2,5 +2,5 @@
 
 public enum Team
 {
-    White, Black, NoTeam
+    White, Black
 }
