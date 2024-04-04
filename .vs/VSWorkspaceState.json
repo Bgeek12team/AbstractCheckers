@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CheckersClasslib"
   ],
-  "SelectedNode": "\\Checkers.sln",
+  "SelectedNode": "\\CheckersClasslib\\DefaultFigure.cs",
   "PreviewInSolutionExplorer": false
 }

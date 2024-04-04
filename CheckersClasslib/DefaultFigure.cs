@@ -12,11 +12,11 @@ public class DefaultFigure(Team team) : Figure(team)
 
     public override bool IsValidEating(Move move) =>
         (move.Yto - move.Yfrom == 2) &&
-        (Math.Abs(move.Xto - move.Yfrom) == 2);
+        (Math.Abs(move.Xto - move.Xfrom) == 2);
 
     public override bool IsValidMovement(Move move) =>
         (move.Yto - move.Yfrom == 1) &&
-        (Math.Abs(move.Xto - move.Yfrom) == 1);
+        (Math.Abs(move.Xto - move.Xfrom) == 1);
 }
 
 public class Queen(Team team) : Figure(team)
