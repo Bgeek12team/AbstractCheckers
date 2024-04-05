@@ -20,6 +20,7 @@ public class Board
         board = cells;
         this.figures = figures;
     }
+    
 
     public void MakeMove(Move move)
     {
