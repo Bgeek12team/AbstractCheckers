@@ -16,7 +16,7 @@ namespace Forms
             InitializeComponent();
             this.cells = cells;
             this.figures = figures;
-            board = new Board(cells, figures, 10);
+            board = new Board(cells, figures);
             sizeCell.x = 55; sizeCell.y = 55;
             initBoard();
             

@@ -58,8 +58,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Анна\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {
-              "projectPath": "C:\\Users\\Анна\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj"
+            "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {
+              "projectPath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj"
             }
           }
         }
