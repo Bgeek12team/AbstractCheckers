@@ -9,7 +9,9 @@ namespace Forms
         Cell[,] cells;
         Figure[,] figures;
         (int x, int y) sizeCell;
-        
+
+        Bitmap whiteCells;
+        Bitmap blackCells;
 
         public mainBoard(Cell[,] cells, Figure[,] figures)
         {
@@ -18,6 +20,12 @@ namespace Forms
             this.figures = figures;
             board = new Board(cells, figures, 10);
             sizeCell.x = 55; sizeCell.y = 55;
+
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image", "cellsWhite.jpg");
+            whiteCells = new Bitmap(path);
+            blackCells = new Bitmap(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image", "cellsBlack.jpg"));
+
+
             initBoard();
             
         }
@@ -34,7 +42,7 @@ namespace Forms
                     {
                         Size = new Size(sizeCell.x, sizeCell.y),
                         Location = new Point(x, y),
-                        BackColor = cells[i, j].Team == Team.White ? Color.Gray : Color.Black
+                        BackgroundImage = cells[i, j].Team == Team.White ? whiteCells : blackCells
                     };
                     gB_board.Controls.Add(cell);
                     x += sizeCell.x;
