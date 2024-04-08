@@ -17,3 +17,16 @@ C:\Users\Алексей\source\repos\AbstractCheckers\Forms\obj\Debug\net8.0-win
 C:\Users\Алексей\source\repos\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.pdb
 C:\Users\Алексей\source\repos\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.genruntimeconfig.cache
 C:\Users\Алексей\source\repos\AbstractCheckers\Forms\obj\Debug\net8.0-windows\ref\Forms.dll
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.csproj.AssemblyReference.cache
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.mainBoard.resources
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.menu.resources
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.Properties.Resources.resources
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.csproj.GenerateResource.cache
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.AssemblyInfoInputs.cache
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.AssemblyInfo.cs
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.csproj.CoreCompileInputs.cache
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.sourcelink.json
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.dll
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\refint\Forms.dll
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.pdb

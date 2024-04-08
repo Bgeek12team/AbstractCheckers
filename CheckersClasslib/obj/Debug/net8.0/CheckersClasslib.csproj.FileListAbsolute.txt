@@ -10,3 +10,11 @@ C:\Users\Анна\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.
 C:\Users\Анна\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\refint\CheckersClasslib.dll
 C:\Users\Анна\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.pdb
 C:\Users\Анна\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\ref\CheckersClasslib.dll
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.AssemblyInfoInputs.cache
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.AssemblyInfo.cs
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.csproj.CoreCompileInputs.cache
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.sourcelink.json
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.dll
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\refint\CheckersClasslib.dll
+C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.pdb

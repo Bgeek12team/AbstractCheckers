@@ -93,6 +93,7 @@ public class Board
     }
 
     // ПЕРЕПИСАТТЬ Сукаа!!
+    // - Бляяяяяяяяяяя, а можно не надо(
 
     void DeleteFigures(Move move)
     {
