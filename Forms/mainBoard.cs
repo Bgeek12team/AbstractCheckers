@@ -22,6 +22,21 @@ namespace Forms
             
         }
 
+        Image GetImageForFigure(Figure figure)
+        {
+            if (figure == null)
+                return Image.FromFile("NoChess.png");
+            if (figure is DefaultFigure)
+                return Image.FromFile("C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\Forms\\image\\5053bd92-f2e2-48dd-a0ac-52fd46007138.jpg");
+            if (figure is Queen)
+                return Image.FromFile("Queen.jpg");
+            if (figure is Markelov)
+                return Image.FromFile("Mark.jpg");
+            if (figure is StraightFigure)
+                return Image.FromFile("Straight.jpg");
+            throw new NotImplementedException();
+        }
+
         void initBoard()
         {
             int y = 30, x;
@@ -30,11 +45,14 @@ namespace Forms
                 x = 30;
                 for (int j = 0; j < cells.GetLength(1); j++)
                 {
-                    PictureBox cell = new PictureBox()
+
+                    var image = GetImageForFigure(figures[i, j]);
+                    var cell = new PictureBox()
                     {
                         Size = new Size(sizeCell.x, sizeCell.y),
                         Location = new Point(x, y),
-                        BackColor = cells[i, j].Team == Team.White ? Color.Gray : Color.Black
+                        BackColor = cells[i, j].Team == Team.White ? Color.Gray : Color.Black,
+                        Image = image
                     };
                     gB_board.Controls.Add(cell);
                     x += sizeCell.x;

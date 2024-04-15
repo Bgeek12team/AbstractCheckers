@@ -30,3 +30,7 @@ C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-wi
 C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.dll
 C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\refint\Forms.dll
 C:\Users\MB_Markelov\Documents\GitHub\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.pdb
+C:\Users\Алексей\source\repos\AbstractCheckers\Forms\bin\Debug\net8.0-windows\CheckersClasslib.dll
+C:\Users\Алексей\source\repos\AbstractCheckers\Forms\bin\Debug\net8.0-windows\CheckersClasslib.pdb
+C:\Users\Алексей\source\repos\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.csproj.AssemblyReference.cache
+C:\Users\Алексей\source\repos\AbstractCheckers\Forms\obj\Debug\net8.0-windows\Forms.csproj.Up2Date

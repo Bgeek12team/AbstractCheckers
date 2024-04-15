@@ -1,4 +1,6 @@
-﻿namespace CheckersClasslib;
+﻿using System.Drawing;
+
+namespace CheckersClasslib;
 
 public abstract class Figure(Team team)
 {
@@ -11,4 +13,5 @@ public abstract class Figure(Team team)
 
     public abstract bool CanEat(Move move, Board board);
     public abstract bool CanMove(Move move, Board board);
+
 }
