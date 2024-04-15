@@ -9,7 +9,9 @@ namespace Forms
         Cell[,] cells;
         Figure[,] figures;
         (int x, int y) sizeCell;
-        
+
+        Bitmap whiteCells;
+        Bitmap blackCells;
 
         public mainBoard(Cell[,] cells, Figure[,] figures)
         {
@@ -18,6 +20,12 @@ namespace Forms
             this.figures = figures;
             board = new Board(cells, figures);
             sizeCell.x = 55; sizeCell.y = 55;
+
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image", "cellsWhite.jpg");
+            whiteCells = new Bitmap(path);
+            blackCells = new Bitmap(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image", "cellsBlack.jpg"));
+
+
             initBoard();
             
         }
@@ -27,7 +35,7 @@ namespace Forms
             if (figure == null)
                 return Image.FromFile("NoChess.png");
             if (figure is DefaultFigure)
-                return Image.FromFile("C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\Forms\\image\\5053bd92-f2e2-48dd-a0ac-52fd46007138.jpg");
+                return Image.FromFile("C:\\Users\\пїЅпїЅпїЅпїЅпїЅпїЅпїЅ\\source\\repos\\AbstractCheckers\\Forms\\image\\5053bd92-f2e2-48dd-a0ac-52fd46007138.jpg");
             if (figure is Queen)
                 return Image.FromFile("Queen.jpg");
             if (figure is Markelov)
@@ -53,6 +61,7 @@ namespace Forms
                         Location = new Point(x, y),
                         BackColor = cells[i, j].Team == Team.White ? Color.Gray : Color.Black,
                         Image = image
+                        BackgroundImage = cells[i, j].Team == Team.White ? whiteCells : blackCells
                     };
                     gB_board.Controls.Add(cell);
                     x += sizeCell.x;
