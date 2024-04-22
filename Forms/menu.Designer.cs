@@ -37,9 +37,10 @@
             // b_startStandartGame
             // 
             b_startStandartGame.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            b_startStandartGame.Location = new Point(80, 65);
+            b_startStandartGame.Location = new Point(91, 87);
+            b_startStandartGame.Margin = new Padding(3, 4, 3, 4);
             b_startStandartGame.Name = "b_startStandartGame";
-            b_startStandartGame.Size = new Size(341, 74);
+            b_startStandartGame.Size = new Size(390, 99);
             b_startStandartGame.TabIndex = 0;
             b_startStandartGame.Text = "Стандартная игра";
             b_startStandartGame.UseVisualStyleBackColor = true;
@@ -48,33 +49,37 @@
             // button2
             // 
             button2.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            button2.Location = new Point(80, 145);
+            button2.Location = new Point(91, 193);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(341, 74);
+            button2.Size = new Size(390, 99);
             button2.TabIndex = 2;
             button2.Text = "Пользовательские события";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            button3.Location = new Point(80, 225);
+            button3.Location = new Point(91, 300);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(341, 74);
+            button3.Size = new Size(390, 99);
             button3.TabIndex = 3;
             button3.Text = "Случайные события";
             button3.UseVisualStyleBackColor = true;
             // 
             // menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(450, 450);
+            ClientSize = new Size(514, 600);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(b_startStandartGame);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "menu";
             Text = "menu";
             ResumeLayout(false);
