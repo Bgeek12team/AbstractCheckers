@@ -24,6 +24,8 @@ public class Board
 
     public void MakeMove(Move move)
     {
+        if (figures[move.Xfrom, move.Yfrom] == null)
+            return;
         if (figures[move.Xfrom, move.Yfrom].Team != LeadingTeam)
             return;
 
@@ -52,13 +54,14 @@ public class Board
 
     MoveResult HandleMove(Move move)
     {
-        if (figures[move.Xfrom, move.Yfrom].IsValidEating(move))
+        var movingFigure = figures[move.Xfrom, move.Yfrom];
+        if (movingFigure.IsValidEating(move))
         {
-            return figures[move.Xto, move.Yto].CanEat(move, this) ? MoveResult.Eat : MoveResult.Denied;
+            return movingFigure.CanEat(move, this) ? MoveResult.Eat : MoveResult.Denied;
         }
-        if (figures[move.Xfrom, move.Yfrom].IsValidMovement(move))
+        if (movingFigure.IsValidMovement(move))
         {
-            return figures[move.Xto, move.Yto].CanMove(move, this) ? MoveResult.Movement : MoveResult.Denied;
+            return movingFigure.CanMove(move, this) ? MoveResult.Movement : MoveResult.Denied;
         }
         return MoveResult.Denied;
     }

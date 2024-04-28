@@ -28,29 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gB_board = new GroupBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
             groupBox3 = new GroupBox();
             b_stopGame = new Button();
+            label2 = new Label();
+            txbx_leading = new Label();
             SuspendLayout();
-            // 
-            // gB_board
-            // 
-            gB_board.Location = new Point(14, 16);
-            gB_board.Margin = new Padding(3, 4, 3, 4);
-            gB_board.Name = "gB_board";
-            gB_board.Padding = new Padding(3, 4, 3, 4);
-            gB_board.Size = new Size(921, 880);
-            gB_board.TabIndex = 0;
-            gB_board.TabStop = false;
-            gB_board.Text = "Поле";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(960, 16);
+            label1.Location = new Point(960, 74);
             label1.Name = "label1";
             label1.Size = new Size(58, 26);
             label1.TabIndex = 1;
@@ -91,30 +81,53 @@
             b_stopGame.UseVisualStyleBackColor = true;
             b_stopGame.Click += b_stopGame_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.Location = new Point(960, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(74, 26);
+            label2.TabIndex = 5;
+            label2.Text = "Ходят";
+            label2.Click += label2_Click;
+            // 
+            // txbx_leading
+            // 
+            txbx_leading.AutoSize = true;
+            txbx_leading.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            txbx_leading.Location = new Point(1040, 9);
+            txbx_leading.Name = "txbx_leading";
+            txbx_leading.Size = new Size(0, 26);
+            txbx_leading.TabIndex = 6;
+            // 
             // mainBoard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1291, 922);
+            Controls.Add(txbx_leading);
+            Controls.Add(label2);
             Controls.Add(b_stopGame);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(label1);
-            Controls.Add(gB_board);
             Margin = new Padding(3, 4, 3, 4);
             Name = "mainBoard";
             Text = "mainBoard";
             Load += mainBoard_Load;
+            MouseDown += mainBoard_MouseDown_1;
+            MouseUp += mainBoard_MouseUp;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private GroupBox gB_board;
         private Label label1;
         private GroupBox groupBox2;
         private GroupBox groupBox3;
         private Button b_stopGame;
+        private Label label2;
+        private Label txbx_leading;
     }
 }

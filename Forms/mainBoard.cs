@@ -1,16 +1,22 @@
 using CheckersClasslib;
+using System.Drawing.Printing;
 
 namespace Forms
 {
     public partial class mainBoard : Form
     {
         Board board;
+        PictureBox[,] pcCells;
+        PictureBox[,] pcFigures;
 
         Cell[,] cells;
         Figure[,] figures;
-        (int x, int y) sizeCell;
-        (int x, int y) sizeFigure;
+        readonly (int x, int y) sizeCell;
+        readonly (int x, int y) sizeFigure;
+        readonly int margin;
 
+        bool moveStarted = false;
+        int xTo, yTo, xFrom, yFrom;
 
         public mainBoard(Cell[,] cells, Figure[,] figures)
         {
@@ -20,9 +26,12 @@ namespace Forms
             board = new Board(cells, figures);
             sizeCell.x = 105; sizeCell.y = 105;
             sizeFigure.x = 60; sizeFigure.y = 60;
+            margin = 30;
 
-            initBoard();
-            
+            InitBoard();
+            txbx_leading.Text = board.LeadingTeam.ToString();
+            board.ChangedTeam += (o,e) => txbx_leading.Text = board.LeadingTeam.ToString();
+
         }
 
         Image GetImageForCell(Cell cell)
@@ -76,7 +85,7 @@ namespace Forms
 
             if (figure == null)
                 return Image.FromFile(Path.Combine(curdir, "noFigure.png"));
-            
+
             if (figure is DefaultFigure)
                 if (figure.Team == Team.White)
                     return Image.FromFile(Path.Combine(curdir, "whiteFigure.png"));
@@ -105,12 +114,26 @@ namespace Forms
             throw new NotImplementedException();
         }
 
-        void initBoard()
+        void Redraw()
         {
-            int y = 30, x;
             for (int i = 0; i < cells.GetLength(0); i++)
             {
-                x = 30;
+                for (int j = 0; j < cells.GetLength(1); j++)
+                {
+                    pcFigures[i, j].BackgroundImage = GetImageForFigure(figures[i, j]);
+                    pcFigures[i, j].Update();
+                }
+            }
+        }
+
+        void InitBoard()
+        {
+            pcCells = new PictureBox[cells.GetLength(0), cells.GetLength(1)];
+            pcFigures = new PictureBox[cells.GetLength(0), cells.GetLength(1)];
+            int y = margin, x;
+            for (int i = 0; i < cells.GetLength(0); i++)
+            {
+                x = margin;
                 for (int j = 0; j < cells.GetLength(1); j++)
                 {
 
@@ -121,25 +144,54 @@ namespace Forms
                         BackgroundImage = GetImageForCell(cells[i, j]),
                     };
 
-                    gB_board.Controls.Add(cell);
+                    Controls.Add(cell);
 
+
+                    var figure = new PictureBox()
+                    {
+                        Size = new Size(sizeFigure.x, sizeFigure.y),
+                        Location = new Point((sizeCell.x - sizeFigure.x) / 2, (sizeCell.y - sizeFigure.y) / 2)
+                    };
                     if (figures[i, j] != null)
                     {
-                        var figure = new PictureBox()
-                        {
-                            Size = new Size(sizeFigure.x, sizeFigure.y),
-                            Location = new Point((sizeCell.x - sizeFigure.x) / 2, (sizeCell.y - sizeFigure.y) / 2),
-                            BackgroundImage = GetImageForFigure(figures[i, j]),
-                        };
-                        cell.Controls.Add(figure);
-                    }
+                        figure.BackgroundImage = GetImageForFigure(figures[i, j]);
+                    };
+
+                    cell.Controls.Add(figure);
+
+                    pcCells[i, j] = cell;
+                    pcFigures[i, j] = figure;
+
+                    pcFigures[i, j].MouseDown += GenerateAction(i, j);
+                    pcCells[i, j].MouseDown += GenerateAction(i, j);
 
                     x += sizeCell.x;
                 }
                 y += sizeCell.y;
             }
         }
-        
+
+        MouseEventHandler GenerateAction(int j, int i) =>
+            (o, e) =>
+            {
+                if (!moveStarted)
+                {
+                    (xFrom, yFrom) = (i, cells.GetLength(1) - 1 - j);
+                    moveStarted = true;
+                }
+                else
+                {
+                    (xTo, yTo) = (i, cells.GetLength(1) - 1- j);
+                    board.MakeMove(new(xFrom, yFrom, xTo, yTo));
+                    Redraw();
+                    moveStarted = false;
+                }
+            };
+
+        private void MainBoard_MouseDown(object? sender, MouseEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
@@ -152,6 +204,25 @@ namespace Forms
         }
 
         private void mainBoard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gB_board_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void mainBoard_MouseDown_1(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void mainBoard_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
