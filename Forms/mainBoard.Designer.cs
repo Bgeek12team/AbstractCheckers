@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class mainBoard
+    partial class MainBoard
     {
         /// <summary>
         ///  Required designer variable.

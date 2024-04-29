@@ -68,6 +68,7 @@
             button3.TabIndex = 3;
             button3.Text = "Случайные события";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // menu
             // 

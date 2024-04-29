@@ -29,7 +29,7 @@ public class Markelov(Team team) : Figure(team)
             board.figures[move.Xto, move.Yto].Team != this.Team)
             return true;
 
-        return board.figures[move.Xto, move.Yfrom] == null;
+        return board.figures[move.Xto, move.Yto] == null;
     }
     public override bool CanMove(Move move, Board board)
     {
@@ -51,13 +51,11 @@ public class Markelov(Team team) : Figure(team)
 
         return true;
     }
-    public override bool IsValidEating(Move move) =>
-        Math.Abs(move.Yto - move.Yfrom) == Math.Abs(move.Xto - move.Xfrom);
+    public override bool IsValidEating(Move move, Board board) => true;
 
-    public override bool IsValidMovement(Move move) =>
-        Math.Abs(move.Yto - move.Yfrom) == Math.Abs(move.Xto - move.Xfrom);
+    public override bool IsValidMovement(Move move, Board board) => true;
 
-    private bool MoveChance()
+    private static bool MoveChance()
     {
         Random random = new Random();
         return random.Next(2) == 0;

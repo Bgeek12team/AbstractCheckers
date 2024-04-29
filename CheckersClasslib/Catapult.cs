@@ -8,7 +8,7 @@ public class Catapult : Cell
     {
         var newX = move.Xto;
         var newY = move.Yto;
-        while (newY < board.board.GetLength(0) && board.figures[newX, newY+1] == null)
+        while (newY+1 < board.board.GetLength(0) && board.figures[newX, newY+1] == null)
         {
             newY++;
         }

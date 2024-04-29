@@ -1,9 +1,10 @@
 using CheckersClasslib;
 using System.Drawing.Printing;
+using System.Windows.Forms;
 
 namespace Forms
 {
-    public partial class mainBoard : Form
+    public partial class MainBoard : Form
     {
         Board board;
         PictureBox[,] pcCells;
@@ -17,8 +18,7 @@ namespace Forms
 
         bool moveStarted = false;
         int xTo, yTo, xFrom, yFrom;
-
-        public mainBoard(Cell[,] cells, Figure[,] figures)
+        public MainBoard(Cell[,] cells, Figure[,] figures)
         {
             InitializeComponent();
             this.cells = cells;
@@ -78,7 +78,6 @@ namespace Forms
 
             throw new NotImplementedException();
         }
-
         Image GetImageForFigure(Figure figure)
         {
             var curdir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image");
@@ -106,7 +105,7 @@ namespace Forms
 
             if (figure is StraightFigure)
                 if (figure.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteSraight.png"));
+                    return Image.FromFile(Path.Combine(curdir, "whiteStraight.png"));
                 else
                     return Image.FromFile(Path.Combine(curdir, "blackStraight.png"));
 
@@ -131,10 +130,10 @@ namespace Forms
             pcCells = new PictureBox[cells.GetLength(0), cells.GetLength(1)];
             pcFigures = new PictureBox[cells.GetLength(0), cells.GetLength(1)];
             int y = margin, x;
-            for (int i = 0; i < cells.GetLength(0); i++)
+            for (int j = 0; j < cells.GetLength(0); j++)
             {
                 x = margin;
-                for (int j = 0; j < cells.GetLength(1); j++)
+                for (int i = 0; i < cells.GetLength(1); i++)
                 {
 
                     var cell = new PictureBox()
@@ -152,6 +151,9 @@ namespace Forms
                         Size = new Size(sizeFigure.x, sizeFigure.y),
                         Location = new Point((sizeCell.x - sizeFigure.x) / 2, (sizeCell.y - sizeFigure.y) / 2)
                     };
+
+                    
+
                     if (figures[i, j] != null)
                     {
                         figure.BackgroundImage = GetImageForFigure(figures[i, j]);
@@ -164,24 +166,24 @@ namespace Forms
 
                     pcFigures[i, j].MouseDown += GenerateAction(i, j);
                     pcCells[i, j].MouseDown += GenerateAction(i, j);
-
+                    //(i, cells.GetLength(1) - 1 - j);
                     x += sizeCell.x;
                 }
                 y += sizeCell.y;
             }
         }
 
-        MouseEventHandler GenerateAction(int j, int i) =>
+        MouseEventHandler GenerateAction(int i, int j) =>
             (o, e) =>
             {
                 if (!moveStarted)
                 {
-                    (xFrom, yFrom) = (i, cells.GetLength(1) - 1 - j);
+                    (xFrom, yFrom) = (i, j);
                     moveStarted = true;
                 }
                 else
                 {
-                    (xTo, yTo) = (i, cells.GetLength(1) - 1- j);
+                    (xTo, yTo) = (i, j);
                     board.MakeMove(new(xFrom, yFrom, xTo, yTo));
                     Redraw();
                     moveStarted = false;

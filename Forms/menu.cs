@@ -13,7 +13,7 @@ namespace Forms
 {
     public partial class menu : Form
     {
-        mainBoard board;
+        MainBoard board;
         public menu()
         {
             InitializeComponent();
@@ -40,7 +40,7 @@ namespace Forms
                 }
             }
 
-            board = new mainBoard(cells, figures);
+            board = new MainBoard(TransposeArray(cells), TransposeArray(figures));
             board.Show();
         }
 
@@ -60,6 +60,8 @@ namespace Forms
                 { null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure()},
                 { GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, new Markelov(Team.White), null},
                                 };
+
+
             for (int i = 0; i < cells.GetLength(0); i++)
             {
                 for (int j = 0; j < cells.GetLength(1); j++)
@@ -68,9 +70,81 @@ namespace Forms
                 }
             }
 
-            board = new mainBoard(cells, figures);
+            board = new MainBoard(TransposeArray(cells), TransposeArray(figures));
 
             board.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var r = new Random();
+            int size = r.Next(7, 9);
+            var cells = new Cell[size, size];
+            var figures = new Figure[size, size];
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size ; j++)
+                {
+                    var cellTeam = ((i + j) % 2) != 0 ? Team.Black : Team.White;
+                    cells[i, j] = GenerateRandomCell(cellTeam);
+                    figures[i, j] = GenerateRandomFigure((Team)r.Next(0, 2));
+                }
+            }
+
+            board = new MainBoard(TransposeArray(cells), TransposeArray(figures));
+
+            board.Show();
+        }
+
+        Figure GenerateRandomFigure(Team team)
+        {
+            var r = new Random();
+            var number = r.Next(0, 10);
+            if (number < 5)
+                return null;
+            if (number < 6)
+                return new StraightFigure(team);
+            if (number < 7)
+                return new Queen(team);
+            if (number < 8)
+                return new Markelov(team);
+            else
+                return new DefaultFigure(team);
+        }
+
+        Cell GenerateRandomCell(Team team)
+        {
+            var r = new Random();
+            var number = r.Next(0, 8);
+            if (number < 2)
+                return new TrenbolonCell(team);
+            if (number < 3)
+                return new Mine(team);
+            if (number < 4)
+                return new Trampoline(team);
+            if (number < 5)
+                return new Catapult(team);
+            if (number < 6)
+                return new Mine(team);
+            else
+                return new DefaultCell(team);
+        }
+
+        static T[,] TransposeArray<T>(T[,] array)
+        {
+            int rows = array.GetLength(0);
+            int columns = array.GetLength(1);
+            T[,] transposed = new T[columns, rows];
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < columns; j++)
+                {
+                    transposed[j, i] = array[i, j];
+                }
+            }
+
+            return transposed;
         }
     }
 }

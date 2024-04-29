@@ -55,11 +55,12 @@ public class Board
     MoveResult HandleMove(Move move)
     {
         var movingFigure = figures[move.Xfrom, move.Yfrom];
-        if (movingFigure.IsValidEating(move))
+        if (movingFigure.IsValidEating(move, this))
         {
-            return movingFigure.CanEat(move, this) ? MoveResult.Eat : MoveResult.Denied;
+            if (movingFigure.CanEat(move, this))
+                return MoveResult.Eat;
         }
-        if (movingFigure.IsValidMovement(move))
+        if (movingFigure.IsValidMovement(move, this))
         {
             return movingFigure.CanMove(move, this) ? MoveResult.Movement : MoveResult.Denied;
         }
@@ -78,9 +79,8 @@ public class Board
     }
     void ChangeCoords(Move move)
     {
-        Figure clone = figures[move.Xto, move.Yto];
-        figures[move.Xto, move.Yto] = figures[move.Xfrom, move.Yfrom];
-        figures[move.Xfrom, move.Yfrom] = clone;
+        (figures[move.Xfrom, move.Yfrom], figures[move.Xto, move.Yto]) = 
+            (figures[move.Xto, move.Yto], figures[move.Xfrom, move.Yfrom]);
     }
 
     void HandleEating(Move move)
@@ -91,6 +91,7 @@ public class Board
             return;
         }
         DeleteFigures(move);
+        ChangeCoords(move);
         board[move.Xto, move.Yto].HandleInMovement(move, this);
         return;
     }
@@ -100,10 +101,17 @@ public class Board
 
     void DeleteFigures(Move move)
     {
-        int eatenX = (move.Xfrom + move.Xto) / 2;
-        int eatenY = (move.Yfrom + move.Yto) / 2;
-
-        figures[eatenX, eatenY] = null;
+        var difX = move.Xto - move.Xfrom;
+        var difY = move.Yto - move.Yfrom;
+        var startX = move.Xfrom;
+        var startY = move.Yfrom;
+        var len = Math.Abs(difX);
+        var stepX = difX / len;
+        var stepY = difY / len;
+        for (int i = 1; i <= len - 1; i++)
+        {
+            figures[startX + i * stepX, startY + i * stepY] = null;
+        }
     }
 
     void ChangeTeam()
