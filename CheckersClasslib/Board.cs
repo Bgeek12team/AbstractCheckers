@@ -66,10 +66,7 @@ public class Board
         }
         return MoveResult.Denied;
     }
-
-    int FigureCount(Move move) =>
-        figures[(move.Xfrom + move.Xto) / 2, (move.Yfrom + move.Yto) / 2] != null ?
-        1 : 0;
+    
 
     void HandleMovement(Move move)
     {
@@ -85,19 +82,11 @@ public class Board
 
     void HandleEating(Move move)
     {
-        if (!figures[move.Xfrom, move.Yfrom].CanEat(move, this))
-        {
-            ChangeTeam();
-            return;
-        }
         DeleteFigures(move);
         ChangeCoords(move);
         board[move.Xto, move.Yto].HandleInMovement(move, this);
         return;
     }
-
-    // ПЕРЕПИСАТТЬ Сукаа!!
-    // - Бляяяяяяяяяяя, а можно не надо(
 
     void DeleteFigures(Move move)
     {
@@ -105,7 +94,9 @@ public class Board
         var difY = move.Yto - move.Yfrom;
         var startX = move.Xfrom;
         var startY = move.Yfrom;
-        var len = Math.Abs(difX);
+        var len = Math.Max(Math.Abs(difX), Math.Abs(difY));
+        if (len == 0)
+            return;
         var stepX = difX / len;
         var stepY = difY / len;
         for (int i = 1; i <= len - 1; i++)

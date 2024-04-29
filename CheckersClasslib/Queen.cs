@@ -9,10 +9,10 @@ public class Queen(Team team) : Figure(team)
         var startX = move.Xfrom;
         var startY = move.Yfrom;
         var len = Math.Abs(difX);
-        var stepX = difX / len;
-        var stepY = difY / len;
         if (len == 0)
             return false;
+        var stepX = difX / len;
+        var stepY = difY / len;
         var count = 0;
         for (int i = 1; i <= len - 1; i++)
         {
@@ -35,10 +35,10 @@ public class Queen(Team team) : Figure(team)
         var startX = move.Xfrom;
         var startY = move.Yfrom;
         var len = Math.Abs(difX);
-        var stepX = difX / len;
-        var stepY = difY / len;
         if (len == 0)
             return false;
+        var stepX = difX / len;
+        var stepY = difY / len;
         for(int i = 1; i <= len; i++)
         {
             if (board.figures[startX + i * stepX, startY + i * stepY] != null)

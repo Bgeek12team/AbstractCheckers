@@ -8,15 +8,31 @@ public class Catapult : Cell
     {
         var newX = move.Xto;
         var newY = move.Yto;
-        while (newY+1 < board.board.GetLength(0) && board.figures[newX, newY+1] == null)
+        if (this.Team == Team.Black)
         {
-            newY++;
-        }
+            while (newY + 1 < board.board.GetLength(0) && board.figures[newX, newY + 1] == null)
+            {
+                newY++;
+            }
 
-        if (newY > move.Yto)
+            if (newY > move.Yto)
+            {
+                board.figures[newX, newY] = board.figures[move.Xto, move.Yto];
+                board.figures[move.Xto, move.Yto] = null;
+            }
+        }
+        else
         {
-            board.figures[newX, newY] = board.figures[move.Xto, move.Yto];
-            board.figures[move.Xto, move.Yto] = null;
+            while (newY - 1> 0 && board.figures[newX, newY - 1] == null)
+            {
+                newY--;
+            }
+
+            if (newY < move.Yto)
+            {
+                board.figures[newX, newY] = board.figures[move.Xto, move.Yto];
+                board.figures[move.Xto, move.Yto] = null;
+            }
         }
     }
 

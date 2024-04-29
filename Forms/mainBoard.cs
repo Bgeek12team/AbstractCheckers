@@ -34,6 +34,21 @@ namespace Forms
 
         }
 
+        static readonly string curdir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image");
+
+        static Image[] figureImages =
+        {
+            Image.FromFile(Path.Combine(curdir, "noFigure.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteFigure.png")),
+            Image.FromFile(Path.Combine(curdir, "blackFigure.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteQueen.png")),
+            Image.FromFile(Path.Combine(curdir, "blackQueen.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteMark.png")),
+            Image.FromFile(Path.Combine(curdir, "blackMark.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteStraight.png")),
+            Image.FromFile(Path.Combine(curdir, "blackStraight.png"))
+        };
+
         Image GetImageForCell(Cell cell)
         {
             var curdir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image");
@@ -43,6 +58,12 @@ namespace Forms
                     return Image.FromFile(Path.Combine(curdir, "whiteDefaultCell.png"));
                 else
                     return Image.FromFile(Path.Combine(curdir, "blackDefaultCell.png"));
+
+            if (cell is AntiMarkMine)
+                if (cell.Team == Team.White)
+                    return Image.FromFile(Path.Combine(curdir, "whiteAntiMarkMine.png"));
+                else
+                    return Image.FromFile(Path.Combine(curdir, "blackAntiMarkMine.png"));
 
             if (cell is Mine)
                 if (cell.Team == Team.White)
@@ -62,52 +83,46 @@ namespace Forms
                 else
                     return Image.FromFile(Path.Combine(curdir, "blackCatapult.png"));
 
-            if (cell is AntiMarkMine)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteAntiMark.png"));
-                else
-                    return Image.FromFile(Path.Combine(curdir, "blackAntiMark.png"));
-
+            
 
             if (cell is TrenbolonCell)
                 if (cell.Team == Team.White)
                     return Image.FromFile(Path.Combine(curdir, "whiteTrenbolone.png"));
                 else
-                    return Image.FromFile(Path.Combine(curdir, "whiteTrenbolone.png"));
+                    return Image.FromFile(Path.Combine(curdir, "blackTrenbolone.png"));
 
 
             throw new NotImplementedException();
         }
         Image GetImageForFigure(Figure figure)
         {
-            var curdir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image");
-
+            
             if (figure == null)
-                return Image.FromFile(Path.Combine(curdir, "noFigure.png"));
+                return figureImages[0];
 
             if (figure is DefaultFigure)
                 if (figure.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteFigure.png"));
+                    return figureImages[1];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackFigure.png"));
+                    return figureImages[2];
 
             if (figure is Queen)
                 if (figure.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteQueen.png"));
+                    return figureImages[3];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackQueen.png"));
+                    return figureImages[4];
 
             if (figure is Markelov)
                 if (figure.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteMark.png"));
+                    return figureImages[5];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackMark.png"));
+                    return figureImages[6];
 
             if (figure is StraightFigure)
                 if (figure.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteStraight.png"));
+                    return figureImages[7];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackStraight.png"));
+                    return figureImages[8];
 
 
             throw new NotImplementedException();
@@ -120,6 +135,7 @@ namespace Forms
                 for (int j = 0; j < cells.GetLength(1); j++)
                 {
                     pcFigures[i, j].BackgroundImage = GetImageForFigure(figures[i, j]);
+                    pcFigures[i, j].Visible = figures[i, j] != null;
                     pcFigures[i, j].Update();
                 }
             }
@@ -141,6 +157,7 @@ namespace Forms
                         Size = new Size(sizeCell.x, sizeCell.y),
                         Location = new Point(x, y),
                         BackgroundImage = GetImageForCell(cells[i, j]),
+                        BorderStyle = BorderStyle.FixedSingle
                     };
 
                     Controls.Add(cell);
@@ -149,7 +166,8 @@ namespace Forms
                     var figure = new PictureBox()
                     {
                         Size = new Size(sizeFigure.x, sizeFigure.y),
-                        Location = new Point((sizeCell.x - sizeFigure.x) / 2, (sizeCell.y - sizeFigure.y) / 2)
+                        Location = new Point((sizeCell.x - sizeFigure.x) / 2, (sizeCell.y - sizeFigure.y) / 2),
+                        BorderStyle = BorderStyle.Fixed3D
                     };
 
                     
@@ -158,6 +176,7 @@ namespace Forms
                     {
                         figure.BackgroundImage = GetImageForFigure(figures[i, j]);
                     };
+                    figure.Visible = figures[i, j] != null;
 
                     cell.Controls.Add(figure);
 

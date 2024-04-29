@@ -116,6 +116,8 @@ namespace Forms
         {
             var r = new Random();
             var number = r.Next(0, 8);
+            if (number < 1)
+                return new AntiMarkMine(team);
             if (number < 2)
                 return new TrenbolonCell(team);
             if (number < 3)
