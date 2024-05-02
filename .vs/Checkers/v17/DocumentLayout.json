@@ -3,48 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\markelov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\markelov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\figure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\figure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\defaultcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\defaultcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\queen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\queen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\catapult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\catapult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\antimarkmine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\antimarkmine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\forms\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\markelov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\markelov.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\forms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -55,36 +31,56 @@
       "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\mine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\defaultcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\defaultcell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\catapult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\catapult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\trampoline.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\straightfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\straightfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\figure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\figure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\defaultfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\defaultfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\tremolon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\tremolon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\move.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\queen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\queen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\defaultfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\defaultfigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\forms\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\mainboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\checkersclasslib\\tremolon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD9E89D8-B18D-431B-B7F4-645EB5132BBA}|CheckersClasslib\\CheckersClasslib.csproj|solutionrelative:checkersclasslib\\tremolon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\mainboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\mainboard.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|solutionrelative:forms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E365A49A-006A-44D2-AC54-DBE42B7B5EFF}|Forms\\Forms.csproj|c:\\users\\\u0430\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\abstractcheckers\\forms\\forms.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -98,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,33 +126,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "Board.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Board.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Board.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Board.cs",
               "RelativeToolTip": "CheckersClasslib\\Board.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAkwDsAAAAwAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAwDMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T19:51:47.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "AntiMarkMine.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\AntiMarkMine.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\AntiMarkMine.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\AntiMarkMine.cs",
               "RelativeToolTip": "CheckersClasslib\\AntiMarkMine.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBYAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T20:26:31.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 16,
               "Title": "mainBoard.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\mainBoard.cs",
               "RelativeDocumentMoniker": "Forms\\mainBoard.cs",
@@ -168,72 +164,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Catapult.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Catapult.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Catapult.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Catapult.cs",
               "RelativeToolTip": "CheckersClasslib\\Catapult.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAcwB4AAAAWAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T21:09:54.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Trampoline.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Trampoline.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Trampoline.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Trampoline.cs",
               "RelativeToolTip": "CheckersClasslib\\Trampoline.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAzwAwAAAAIAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAzwBUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T20:30:29.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "DefaultCell.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\DefaultCell.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\DefaultCell.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\DefaultCell.cs",
               "RelativeToolTip": "CheckersClasslib\\DefaultCell.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBIAAAAEAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T21:09:55.253Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "mainBoard.cs",
-              "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\mainBoard.cs",
-              "RelativeDocumentMoniker": "Forms\\mainBoard.cs",
-              "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\mainBoard.cs",
-              "RelativeToolTip": "Forms\\mainBoard.cs",
-              "ViewState": "AQIAAMEAAAAAAAAAAAAnwM0AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T15:48:01.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Queen.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Queen.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Queen.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Queen.cs",
               "RelativeToolTip": "CheckersClasslib\\Queen.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAnwC8AAAAEAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC8AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:40:59.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "menu.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\menu.cs",
               "RelativeDocumentMoniker": "Forms\\menu.cs",
@@ -246,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "menu.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\menu.cs",
               "RelativeDocumentMoniker": "Forms\\menu.cs",
@@ -258,20 +241,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "Mine.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Mine.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Mine.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Mine.cs",
               "RelativeToolTip": "CheckersClasslib\\Mine.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBAAAABBAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:40:58.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 17,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Team.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Team.cs",
@@ -279,63 +262,63 @@
               "RelativeToolTip": "CheckersClasslib\\Team.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T20:59:33.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T20:59:33.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "StraightFigure.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\StraightFigure.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\StraightFigure.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\StraightFigure.cs",
               "RelativeToolTip": "CheckersClasslib\\StraightFigure.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAuwBcAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-28T21:09:53.024Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "Markelov.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Markelov.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Markelov.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Markelov.cs",
               "RelativeToolTip": "CheckersClasslib\\Markelov.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAYwC8AAAA6AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:40:52.542Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Figure.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Figure.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Figure.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Figure.cs",
               "RelativeToolTip": "CheckersClasslib\\Figure.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T16:40:28.638Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "DefaultFigure.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\DefaultFigure.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\DefaultFigure.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\DefaultFigure.cs",
               "RelativeToolTip": "CheckersClasslib\\DefaultFigure.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAQwA4AAABCAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAuwBIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:02:36.581Z"
+              "WhenOpened": "2024-04-28T21:02:36.581Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Tremolon.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Tremolon.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Tremolon.cs",
@@ -347,19 +330,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "Cell.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Cell.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Cell.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Cell.cs",
               "RelativeToolTip": "CheckersClasslib\\Cell.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAA6wAcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:09:56.854Z"
+              "WhenOpened": "2024-04-28T21:09:56.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 2,
               "Title": "Move.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\CheckersClasslib\\Move.cs",
               "RelativeDocumentMoniker": "CheckersClasslib\\Move.cs",
@@ -367,19 +351,21 @@
               "RelativeToolTip": "CheckersClasslib\\Move.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T21:09:55.802Z"
+              "WhenOpened": "2024-04-28T21:09:55.802Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\Program.cs",
               "RelativeDocumentMoniker": "Forms\\Program.cs",
               "ToolTip": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\Program.cs",
               "RelativeToolTip": "Forms\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T16:00:53.832Z"
+              "WhenOpened": "2024-04-29T16:00:53.832Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -396,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "Forms.csproj",
               "DocumentMoniker": "C:\\Users\\\u0410\u043B\u0435\u043A\u0441\u0435\u0439\\source\\repos\\AbstractCheckers\\Forms\\Forms.csproj",
               "RelativeDocumentMoniker": "Forms\\Forms.csproj",

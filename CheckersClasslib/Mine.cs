@@ -19,8 +19,8 @@ public class Mine : Cell
         var r = new Random();
         if (r.Next(0, 1) == 0)
         {
-            board.figures[move.Xto, move.Yto] = null;
-            board.board[move.Xto, move.Yto] = new DefaultCell(this.Team);
+            board.figures[move.Xfrom, move.Yfrom] = null;
+            board.board[move.Xfrom, move.Yfrom] = new DefaultCell(this.Team);
         }
     }
 }

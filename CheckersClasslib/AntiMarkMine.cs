@@ -6,19 +6,15 @@ public class AntiMarkMine : Mine
 
     public override void HandleInMovement(Move move, Board board)
     {
-        if (board.figures[move.Xto, move.Xfrom] is not Markelov)
+        if (board.figures[move.Xto, move.Yto] is not Markelov)
             return;
-        var r = new Random();
-        if (r.Next(0, 1) == 0)
-            board.figures[move.Xto, move.Yto] = null;
+        board.figures[move.Xto, move.Yto] = null;
     }
 
     public override void HandleOutMovement(Move move, Board board)
     {
-        if (board.figures[move.Xto, move.Xfrom] is not Markelov)
+        if (board.figures[move.Xfrom, move.Yfrom] is not Markelov)
             return;
-        var r = new Random();
-        if (r.Next(0, 1) == 0)
-            board.figures[move.Xfrom, move.Yfrom] = null;
+        board.figures[move.Xfrom, move.Yfrom] = null;
     }
 }

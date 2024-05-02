@@ -38,7 +38,7 @@ public class Board
         }
         board[move.Xto, move.Yto].HandleOutMovement(move, this);
 
-        if (board[move.Xfrom, move.Xto] == null)
+        if (board[move.Xfrom, move.Yfrom] == null)
         {
             ChangeTeam();
             return;
