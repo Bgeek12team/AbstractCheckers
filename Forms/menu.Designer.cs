@@ -1,6 +1,6 @@
 ﻿namespace Forms
 {
-    partial class menu
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             b_startStandartGame = new Button();
             button2 = new Button();
             button3 = new Button();

@@ -85,7 +85,11 @@ namespace Forms
                 else
                     return Image.FromFile(Path.Combine(curdir, "blackCatapult.png"));
 
-            
+            if (cell is Tornado)
+                if (cell.Team == Team.White)
+                    return Image.FromFile(Path.Combine(curdir, "whiteTornado.png"));
+                else
+                    return Image.FromFile(Path.Combine(curdir, "blackTornado.png"));
 
             if (cell is TrenbolonCell)
                 if (cell.Team == Team.White)
