@@ -11,8 +11,7 @@ public class DefaultFigure(Team team) : Figure(team)
         board.figures[move.Xto, move.Yto] == null;
 
     public override bool IsValidEating(Move move, Board board) =>
-        (board.figures[move.Xfrom, move.Yfrom].Team == Team.White ?
-            move.Yfrom - move.Yto == 2 : move.Yto - move.Yfrom == 2) &&
+        (Math.Abs(move.Yto - move.Yfrom) == 2) &&
         (Math.Abs(move.Xto - move.Xfrom) == 2);
 
     public override bool IsValidMovement(Move move, Board board) =>
