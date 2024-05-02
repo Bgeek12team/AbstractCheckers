@@ -28,7 +28,7 @@ public class Tornado : Cell
 
         for (int i = 0; i < rows; i++)
         {
-            for (int j = 0; j < columns; j++)
+            for (int j = i; j < columns; j++)
             {
                 var t = array[i, j];
                 array[i, j] = array[j, i];
