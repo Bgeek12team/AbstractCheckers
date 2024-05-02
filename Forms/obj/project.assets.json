@@ -27,24 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Алексей\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Анна\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\Forms\\Forms.csproj",
+      "projectUniqueName": "C:\\Users\\Анна\\Source\\Repos\\AbstractCheckers4\\Forms\\Forms.csproj",
       "projectName": "Forms",
-      "projectPath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\Forms\\Forms.csproj",
-      "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\Forms\\obj\\",
+      "projectPath": "C:\\Users\\Анна\\Source\\Repos\\AbstractCheckers4\\Forms\\Forms.csproj",
+      "packagesPath": "C:\\Users\\Анна\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Анна\\Source\\Repos\\AbstractCheckers4\\Forms\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Анна\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -58,8 +53,8 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "projectReferences": {
-            "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj": {
-              "projectPath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj"
+            "C:\\Users\\Анна\\Source\\Repos\\AbstractCheckers4\\CheckersClasslib\\CheckersClasslib.csproj": {
+              "projectPath": "C:\\Users\\Анна\\Source\\Repos\\AbstractCheckers4\\CheckersClasslib\\CheckersClasslib.csproj"
             }
           }
         }
@@ -68,11 +63,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -97,7 +87,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
