@@ -36,13 +36,16 @@ public class Board
             ChangeTeam();
             return;
         }
-        board[move.Xto, move.Yto].HandleOutMovement(move, this);
 
         if (board[move.Xfrom, move.Yfrom] == null)
         {
             ChangeTeam();
             return;
         }
+
+        figures[move.Xfrom, move.Yfrom].HandleOutMovement(move, this);
+        board[move.Xfrom, move.Xfrom].HandleOutMovement(move, this);
+
         if (moveResult == MoveResult.Movement)
         {
             HandleMovement(move);
@@ -54,6 +57,7 @@ public class Board
 
     MoveResult HandleMove(Move move)
     {
+        
         var movingFigure = figures[move.Xfrom, move.Yfrom];
         if (movingFigure.IsValidEating(move, this))
         {
@@ -70,8 +74,14 @@ public class Board
 
     void HandleMovement(Move move)
     {
+        if (figures[move.Xfrom, move.Yfrom] == null)
+        {
+            ChangeTeam();
+            return;
+        }
         ChangeCoords(move);
-        board[move.Xto, move.Yto].HandleInMovement(move, this);
+        figures[move.Xto, move.Yto]?.HandleInMovement(move, this);
+        board[move.Xto, move.Yto]?.HandleInMovement(move, this);
         ChangeTeam();
     }
     void ChangeCoords(Move move)
@@ -84,7 +94,8 @@ public class Board
     {
         DeleteFigures(move);
         ChangeCoords(move);
-        board[move.Xto, move.Yto].HandleInMovement(move, this);
+        board[move.Xto, move.Yto]?.HandleInMovement(move, this);
+        figures[move.Xfrom, move.Yfrom]?.HandleInMovement(move, this);
         return;
     }
 

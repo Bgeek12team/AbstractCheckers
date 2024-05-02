@@ -10,6 +10,16 @@ public class DefaultFigure(Team team) : Figure(team)
     public override bool CanMove(Move move, Board board) =>
         board.figures[move.Xto, move.Yto] == null;
 
+    public override void HandleInMovement(Move move, Board board)
+    {
+
+    }
+
+    public override void HandleOutMovement(Move move, Board board)
+    {
+
+    }
+
     public override bool IsValidEating(Move move, Board board) =>
         (Math.Abs(move.Yto - move.Yfrom) == 2) &&
         (Math.Abs(move.Xto - move.Xfrom) == 2);

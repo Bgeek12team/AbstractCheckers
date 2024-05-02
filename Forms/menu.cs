@@ -56,7 +56,7 @@ namespace Forms
                 {(3, 4), new Trampoline(getTeam(3,4)) },
                 {(4, 5), new Mine(getTeam(4,5)) },
                 {(4, 1), new TrenbolonCell(getTeam(5,1)) },
-                {(3, 2), new Catapult(getTeam(3,2)) }
+                {(3, 2), new Catapult(getTeam(3,2)) },
             };
             Cell[,] cells = new Cell[8, 8];
             
@@ -66,7 +66,7 @@ namespace Forms
                 { null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure(), null, new Markelov(Team.Black)},
                 { null, null, null, null, null, null, null, null},
                 { null, null, null, null, null, null, null, null},
-                { new Queen(Team.White), null, GenWhiteFigure(), null, new Markelov(Team.White), null, GenWhiteFigure(), null},
+                { new Queen(Team.White), null, new BombFigure(Team.White), null, new Markelov(Team.White), null, GenWhiteFigure(), null},
                 { null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure()},
                 { GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null},
                                 };
@@ -114,7 +114,7 @@ namespace Forms
         Figure GenerateRandomFigure(Team team)
         {
             var r = new Random();
-            var number = r.Next(0, 10);
+            var number = r.Next(0, 11);
             if (number < 5)
                 return null;
             if (number < 6)
@@ -123,6 +123,8 @@ namespace Forms
                 return new Queen(team);
             if (number < 8)
                 return new Markelov(team);
+            if (number < 9)
+                return new BombFigure(team);
             else
                 return new DefaultFigure(team);
         }

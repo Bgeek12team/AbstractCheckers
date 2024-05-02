@@ -47,6 +47,16 @@ public class Queen(Team team) : Figure(team)
         return true;
     }
 
+    public override void HandleInMovement(Move move, Board board)
+    {
+
+    }
+
+    public override void HandleOutMovement(Move move, Board board)
+    {
+
+    }
+
     public override bool IsValidEating(Move move, Board board) => 
         (Math.Abs(move.Yto - move.Yfrom)) == (Math.Abs(move.Xto - move.Xfrom));
 

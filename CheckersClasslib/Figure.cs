@@ -10,7 +10,8 @@ public abstract class Figure(Team team)
 
     public abstract bool IsValidMovement(Move move, Board board);
     public abstract bool IsValidEating(Move move, Board board);
-
+    public abstract void HandleInMovement(Move move, Board board);
+    public abstract void HandleOutMovement(Move move, Board board);
     public abstract bool CanEat(Move move, Board board);
     public abstract bool CanMove(Move move, Board board);
 

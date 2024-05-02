@@ -46,7 +46,9 @@ namespace Forms
             Image.FromFile(Path.Combine(curdir, "whiteMark.png")),
             Image.FromFile(Path.Combine(curdir, "blackMark.png")),
             Image.FromFile(Path.Combine(curdir, "whiteStraight.png")),
-            Image.FromFile(Path.Combine(curdir, "blackStraight.png"))
+            Image.FromFile(Path.Combine(curdir, "blackStraight.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteBomb.png")),
+            Image.FromFile(Path.Combine(curdir, "blackBomb.png"))
         };
 
         Image GetImageForCell(Cell cell)
@@ -124,6 +126,11 @@ namespace Forms
                 else
                     return figureImages[8];
 
+            if (figure is BombFigure)
+                if (figure.Team == Team.White)
+                    return figureImages[9];
+                else
+                    return figureImages[10];
 
             throw new NotImplementedException();
         }

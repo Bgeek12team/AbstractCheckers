@@ -66,7 +66,17 @@ public class Markelov(Team team) : Figure(team)
     private static bool MoveChance()
     {
         Random random = new Random();
-        return random.Next(0, 3) <= 1;
+        return random.Next(0, 1) == 0;
+    }
+
+    public override void HandleInMovement(Move move, Board board)
+    {
+
+    }
+
+    public override void HandleOutMovement(Move move, Board board)
+    {
+
     }
 }
 
