@@ -40,19 +40,17 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(960, 74);
+            label1.Location = new Point(840, 56);
             label1.Name = "label1";
-            label1.Size = new Size(58, 26);
+            label1.Size = new Size(46, 22);
             label1.TabIndex = 1;
             label1.Text = "Ход:";
             // 
             // groupBox2
             // 
-            groupBox2.Location = new Point(960, 415);
-            groupBox2.Margin = new Padding(3, 4, 3, 4);
+            groupBox2.Location = new Point(840, 311);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(3, 4, 3, 4);
-            groupBox2.Size = new Size(319, 221);
+            groupBox2.Size = new Size(279, 166);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
@@ -60,11 +58,9 @@
             // 
             // groupBox3
             // 
-            groupBox3.Location = new Point(960, 185);
-            groupBox3.Margin = new Padding(3, 4, 3, 4);
+            groupBox3.Location = new Point(840, 139);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(3, 4, 3, 4);
-            groupBox3.Size = new Size(319, 221);
+            groupBox3.Size = new Size(279, 166);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "groupBox3";
@@ -72,10 +68,9 @@
             // b_stopGame
             // 
             b_stopGame.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            b_stopGame.Location = new Point(941, 805);
-            b_stopGame.Margin = new Padding(3, 4, 3, 4);
+            b_stopGame.Location = new Point(823, 604);
             b_stopGame.Name = "b_stopGame";
-            b_stopGame.Size = new Size(319, 91);
+            b_stopGame.Size = new Size(279, 68);
             b_stopGame.TabIndex = 4;
             b_stopGame.Text = "Завершить";
             b_stopGame.UseVisualStyleBackColor = true;
@@ -85,9 +80,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label2.Location = new Point(960, 9);
+            label2.Location = new Point(840, 7);
             label2.Name = "label2";
-            label2.Size = new Size(74, 26);
+            label2.Size = new Size(60, 22);
             label2.TabIndex = 5;
             label2.Text = "Ходят";
             label2.Click += label2_Click;
@@ -96,24 +91,23 @@
             // 
             txbx_leading.AutoSize = true;
             txbx_leading.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            txbx_leading.Location = new Point(1040, 9);
+            txbx_leading.Location = new Point(910, 7);
             txbx_leading.Name = "txbx_leading";
-            txbx_leading.Size = new Size(0, 26);
+            txbx_leading.Size = new Size(0, 22);
             txbx_leading.TabIndex = 6;
             // 
-            // mainBoard
+            // MainBoard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1291, 922);
+            ClientSize = new Size(1132, 680);
             Controls.Add(txbx_leading);
             Controls.Add(label2);
             Controls.Add(b_stopGame);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
-            Name = "mainBoard";
+            Name = "MainBoard";
             Text = "mainBoard";
             Load += mainBoard_Load;
             MouseDown += mainBoard_MouseDown_1;

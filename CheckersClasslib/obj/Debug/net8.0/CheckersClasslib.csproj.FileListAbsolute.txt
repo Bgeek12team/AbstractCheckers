@@ -30,3 +30,15 @@ C:\Users\Алексей\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug
 C:\Users\Алексей\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\refint\CheckersClasslib.dll
 C:\Users\Алексей\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.pdb
 C:\Users\Алексей\source\repos\AbstractCheckers\CheckersClasslib\obj\Debug\net8.0\ref\CheckersClasslib.dll
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\bin\Debug\net8.0\CheckersClasslib.deps.json
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\bin\Debug\net8.0\CheckersClasslib.dll
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\bin\Debug\net8.0\CheckersClasslib.pdb
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.AssemblyInfoInputs.cache
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.AssemblyInfo.cs
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.csproj.CoreCompileInputs.cache
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.sourcelink.json
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.dll
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\refint\CheckersClasslib.dll
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\CheckersClasslib.pdb
+C:\Users\Анна\Source\Repos\AbstractCheckers4\CheckersClasslib\obj\Debug\net8.0\ref\CheckersClasslib.dll

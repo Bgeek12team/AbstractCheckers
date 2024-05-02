@@ -46,19 +46,29 @@ namespace Forms
 
         Figure GenWhiteFigure() => new DefaultFigure(Team.White);
         Figure GenBlackFigure() => new DefaultFigure(Team.Black);
+        Team getTeam(int x, int y) { return ((x + y) % 2) != 0 ? Team.Black : Team.White; }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Dictionary<(int x, int y), Cell> mapNotDefaultCells = new Dictionary<(int x, int y), Cell>()
+            {
+                {(3, 6), new AntiMarkMine(getTeam(3,6)) },
+                {(3, 4), new Trampoline(getTeam(3,4)) },
+                {(4, 5), new Mine(getTeam(4,5)) },
+                {(4, 1), new TrenbolonCell(getTeam(5,1)) },
+                {(3, 2), new Catapult(getTeam(3,2)) }
+            };
             Cell[,] cells = new Cell[8, 8];
+            
             Figure[,] figures = {
-                { null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure(), null, new Markelov(Team.Black)},
-                { new Queen(Team.Black), null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure(), null},
                 { null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure()},
+                { new Queen(Team.Black), null, GenBlackFigure(), null, new StraightFigure(Team.Black), null, GenBlackFigure(), null},
+                { null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure(), null, new Markelov(Team.Black)},
                 { null, null, null, null, null, null, null, null},
                 { null, null, null, null, null, null, null, null},
-                { new Queen(Team.White), null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null},
+                { new Queen(Team.White), null, GenWhiteFigure(), null, new Markelov(Team.White), null, GenWhiteFigure(), null},
                 { null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure()},
-                { GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, new Markelov(Team.White), null},
+                { GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null, GenWhiteFigure(), null},
                                 };
 
 
@@ -66,7 +76,12 @@ namespace Forms
             {
                 for (int j = 0; j < cells.GetLength(1); j++)
                 {
-                    cells[i, j] = new DefaultCell(((i + j) % 2) != 0 ? Team.Black : Team.White);
+                    if (mapNotDefaultCells.ContainsKey((i, j)))
+                    {
+                        cells[i, j] = mapNotDefaultCells[(i, j)];
+                        continue;
+                    }
+                    cells[i, j] = new DefaultCell(getTeam(i, j));
                 }
             }
 
