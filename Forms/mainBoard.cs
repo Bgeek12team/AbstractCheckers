@@ -137,6 +137,8 @@ namespace Forms
                     pcFigures[i, j].BackgroundImage = GetImageForFigure(figures[i, j]);
                     pcFigures[i, j].Visible = figures[i, j] != null;
                     pcFigures[i, j].Update();
+                    pcCells[i,j].BackgroundImage = GetImageForCell(cells[i,j]);
+                    pcCells[i, j].Update();
                 }
             }
         }

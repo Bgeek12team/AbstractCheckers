@@ -31,9 +31,9 @@ public class Markelov(Team team) : Figure(team)
         if (count == 0)
             return false;
 
-        if (board.figures[move.Xto, move.Yto] != null &&
-            board.figures[move.Xto, move.Yto].Team != this.Team)
-            return true;
+        if (board.figures[move.Xfrom + (len - 1) * stepX, move.Yfrom + (len - 1) * stepY] != null &&
+            board.figures[move.Xfrom + (len - 1) * stepX, move.Yfrom + (len - 1) * stepY].Team == this.Team)
+            return false;
 
         return board.figures[move.Xto, move.Yto] == null;
     }
@@ -51,7 +51,7 @@ public class Markelov(Team team) : Figure(team)
         var stepX = difX / len;
         var stepY = difY / len;
 
-        for (int i = 1; i < len; i++)
+        for (int i = 1; i <= len; i++)
         {
             if (board.figures[move.Xfrom + i * stepX, move.Yfrom + i * stepY] != null)
                 return false;
