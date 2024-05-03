@@ -22,25 +22,25 @@ public class Board
     }
     
 
-    public void MakeMove(Move move)
+    public bool MakeMove(Move move)
     {
         if (figures[move.Xfrom, move.Yfrom] == null)
-            return;
+            return false;
         if (figures[move.Xfrom, move.Yfrom].Team != LeadingTeam)
-            return;
+            return false;
 
         MoveResult moveResult;
         moveResult = HandleMove(move);
         if (moveResult == MoveResult.Denied)
         {
             ChangeTeam();
-            return;
+            return false;
         }
 
         if (board[move.Xfrom, move.Yfrom] == null)
         {
             ChangeTeam();
-            return;
+            return false;
         }
 
         figures[move.Xfrom, move.Yfrom].HandleOutMovement(move, this);
@@ -49,9 +49,10 @@ public class Board
         if (moveResult == MoveResult.Movement)
         {
             HandleMovement(move);
-            return;
+            return true;
         }
         HandleEating(move);
+        return true;
     }
 
 

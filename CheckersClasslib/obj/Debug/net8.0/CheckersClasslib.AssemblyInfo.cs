@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CheckersClasslib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9eac4fdea525b3d906026206e851f5c416f1b65b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0331ff402e87c7c43258e0512b6e403a6c1a270b")]
 [assembly: System.Reflection.AssemblyProductAttribute("CheckersClasslib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CheckersClasslib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

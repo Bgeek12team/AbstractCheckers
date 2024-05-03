@@ -216,8 +216,12 @@ namespace Forms
                 else
                 {
                     (xTo, yTo) = (i, j);
-                    board.MakeMove(new(xFrom, yFrom, xTo, yTo));
-                    Redraw();
+                    var conditionMove = board.MakeMove(new(xFrom, yFrom, xTo, yTo));
+                    if (conditionMove == true)
+                    {
+                        Redraw();
+                        rcTxBx_HistoryMove.Text += $"X:{xFrom} Y:{yFrom} -> X:{xTo} Y:{yTo} Team: {(Team)(1 - (int)board.LeadingTeam)}\n";
+                    }
                     moveStarted = false;
                 }
             };
