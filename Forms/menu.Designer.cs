@@ -32,6 +32,7 @@
             b_startStandartGame = new Button();
             button2 = new Button();
             button3 = new Button();
+            help = new Button();
             SuspendLayout();
             // 
             // b_startStandartGame
@@ -70,6 +71,17 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // help
+            // 
+            help.Font = new Font("Tahoma", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            help.Location = new Point(23, 480);
+            help.Name = "help";
+            help.Size = new Size(85, 79);
+            help.TabIndex = 4;
+            help.Text = "?";
+            help.UseVisualStyleBackColor = true;
+            help.Click += help_Click;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -77,6 +89,7 @@
             BackColor = SystemColors.InactiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(839, 572);
+            Controls.Add(help);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(b_startStandartGame);
@@ -91,5 +104,6 @@
         private Button b_startStandartGame;
         private Button button2;
         private Button button3;
+        private Button help;
     }
 }

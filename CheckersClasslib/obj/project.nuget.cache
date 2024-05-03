@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XG5qeLqjUfB6cMgpjQBmH65k1xslLG0+eNg6S14yYsD1tLc6mGf7w227VkVuVSDSPxkFm5cS0SCGJCf+dwP9hg==",
+  "dgSpecHash": "zCpZ8/5A3/o8B2uzA/5894hqDWs3WI9LDtETXKSmG8IVfnrvDNlJPghCNsLBPzh4hejNk1sQ8p0k7c4tP3hMiA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Алексей\\source\\repos\\AbstractCheckers\\CheckersClasslib\\CheckersClasslib.csproj",
+  "projectFilePath": "C:\\Users\\belsk\\Source\\Repos\\AbstractCheckerstest\\CheckersClasslib\\CheckersClasslib.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

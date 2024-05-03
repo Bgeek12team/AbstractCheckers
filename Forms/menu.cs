@@ -60,7 +60,7 @@ public partial class Menu : Form
             {(2, 4), new Tornado(getTeam(2,4)) },
         };
         Cell[,] cells = new Cell[8, 8];
-        
+
         Figure[,] figures = {
             { null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure(), null, GenBlackFigure()},
             { new Queen(Team.Black), null, GenBlackFigure(), null, new StraightFigure(Team.Black), null, GenBlackFigure(), null},
@@ -99,7 +99,7 @@ public partial class Menu : Form
         var figures = new Figure[size, size];
         for (int i = 0; i < size; i++)
         {
-            for (int j = 0; j < size ; j++)
+            for (int j = 0; j < size; j++)
             {
                 var cellTeam = ((i + j) % 2) != 0 ? Team.Black : Team.White;
                 cells[i, j] = GenerateRandomCell(cellTeam);
@@ -150,6 +150,12 @@ public partial class Menu : Form
             return new Tornado(team);
         else
             return new DefaultCell(team);
+    }
+
+    private void help_Click(object sender, EventArgs e)
+    {
+        HelpForm helpForm = new HelpForm();
+        helpForm.ShowDialog();
     }
 
     static T[,] TransposeArray<T>(T[,] array)
