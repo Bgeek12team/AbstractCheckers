@@ -37,7 +37,7 @@
             // b_startStandartGame
             // 
             b_startStandartGame.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            b_startStandartGame.Location = new Point(91, 87);
+            b_startStandartGame.Location = new Point(437, 13);
             b_startStandartGame.Margin = new Padding(3, 4, 3, 4);
             b_startStandartGame.Name = "b_startStandartGame";
             b_startStandartGame.Size = new Size(390, 99);
@@ -49,19 +49,19 @@
             // button2
             // 
             button2.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            button2.Location = new Point(91, 193);
+            button2.Location = new Point(437, 207);
             button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
             button2.Size = new Size(390, 99);
             button2.TabIndex = 2;
-            button2.Text = "Пользовательские события";
+            button2.Text = "Демо-сценарий";
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
             // button3
             // 
             button3.Font = new Font("Times New Roman", 14.25F, FontStyle.Bold);
-            button3.Location = new Point(91, 300);
+            button3.Location = new Point(437, 460);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(390, 99);
@@ -70,18 +70,18 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // menu
+            // Menu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.InactiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(514, 600);
+            ClientSize = new Size(839, 572);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(b_startStandartGame);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "menu";
+            Name = "Menu";
             Text = "menu";
             ResumeLayout(false);
         }

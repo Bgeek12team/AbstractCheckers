@@ -51,51 +51,69 @@ namespace Forms
             Image.FromFile(Path.Combine(curdir, "blackBomb.png"))
         };
 
+        static Image[] cellImages =
+        {
+            Image.FromFile(Path.Combine(curdir, "whiteDefaultCell.png")),
+            Image.FromFile(Path.Combine(curdir, "blackDefaultCell.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteAntiMarkMine.png")),
+            Image.FromFile(Path.Combine(curdir, "blackAntiMarkMine.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteMine.png")),
+            Image.FromFile(Path.Combine(curdir, "blackMine.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteTrampoline.png")),
+            Image.FromFile(Path.Combine(curdir, "blackTrampoline.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteCatapult.png")),
+            Image.FromFile(Path.Combine(curdir, "blackCatapult.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteTornado.png")),
+            Image.FromFile(Path.Combine(curdir, "blackTornado.png")),
+            Image.FromFile(Path.Combine(curdir, "whiteTrenbolone.png")),
+            Image.FromFile(Path.Combine(curdir, "blackTrenbolone.png"))
+        };
+
         Image GetImageForCell(Cell cell)
         {
             var curdir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "image");
 
             if (cell is DefaultCell)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteDefaultCell.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[0];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackDefaultCell.png"));
+                    return cellImages[1];
 
             if (cell is AntiMarkMine)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteAntiMarkMine.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[2];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackAntiMarkMine.png"));
+                    return cellImages[3];
 
             if (cell is Mine)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteMine.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[4];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackMine.png"));
+                    return cellImages[5];
 
             if (cell is Trampoline)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteTrampoline.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[6];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackTrampoline.png"));
+                    return cellImages[7];
 
             if (cell is Catapult)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteCatapult.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[8];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackCatapult.png"));
+                    return cellImages[9];
 
             if (cell is Tornado)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteTornado.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[10];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackTornado.png"));
+                    return cellImages[11];
 
             if (cell is TrenbolonCell)
-                if (cell.Team == Team.White)
-                    return Image.FromFile(Path.Combine(curdir, "whiteTrenbolone.png"));
+                if (cell.CellTeam == Team.White)
+                    return cellImages[12];
                 else
-                    return Image.FromFile(Path.Combine(curdir, "blackTrenbolone.png"));
+                    return cellImages[13];
 
 
             throw new NotImplementedException();
@@ -107,31 +125,31 @@ namespace Forms
                 return figureImages[0];
 
             if (figure is DefaultFigure)
-                if (figure.Team == Team.White)
+                if (figure.FigureTeam == Team.White)
                     return figureImages[1];
                 else
                     return figureImages[2];
 
             if (figure is Queen)
-                if (figure.Team == Team.White)
+                if (figure.FigureTeam == Team.White)
                     return figureImages[3];
                 else
                     return figureImages[4];
 
             if (figure is Markelov)
-                if (figure.Team == Team.White)
+                if (figure.FigureTeam == Team.White)
                     return figureImages[5];
                 else
                     return figureImages[6];
 
             if (figure is StraightFigure)
-                if (figure.Team == Team.White)
+                if (figure.FigureTeam == Team.White)
                     return figureImages[7];
                 else
                     return figureImages[8];
 
             if (figure is BombFigure)
-                if (figure.Team == Team.White)
+                if (figure.FigureTeam == Team.White)
                     return figureImages[9];
                 else
                     return figureImages[10];
